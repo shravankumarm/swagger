@@ -1,0 +1,22 @@
+{
+  "name": "odometer",
+  "version": "0.4.8",
+  "description": "Transition numbers with ease",
+  "main": "odometer.js",
+  "authors": [
+    "Sean <sean.mamillapalli@msg.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-uglify": "^2.0.1",
+    "moment": "^2.18.1"
+  }
+}

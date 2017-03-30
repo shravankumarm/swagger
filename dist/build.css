@@ -1,0 +1,490 @@
+.number-container{
+	 /*background: url(../img/msg_main.jpg) no-repeat center center;*/
+}
+/* Prism.js */
+code[class*="language-"], pre[class*="language-"] {color: black; text-shadow: 0 1px white; font-family: Consolas, Monaco, 'Andale Mono', monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; -moz-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; } pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {text-shadow: none; background: #b3d4fc; } pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection {text-shadow: none; background: #b3d4fc; } @media print {code[class*="language-"], pre[class*="language-"] {text-shadow: none; } } /* Code blocks */ pre[class*="language-"] {padding: 1em; margin: .5em 0; overflow: auto; font-size: .7em; } :not(pre) > code[class*="language-"], pre[class*="language-"] {background: #f5f2f0; } /* Inline code */ :not(pre) > code[class*="language-"] {padding: .1em; border-radius: .3em; } .token.comment, .token.prolog, .token.doctype, .token.cdata {color: slategray; } .token.punctuation {color: #999; } .namespace {opacity: .7; } .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol {color: #905; } .token.selector, .token.attr-name, .token.string, .token.builtin {color: #690; } .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable {color: #a67f59; background: hsla(0,0%,100%,.5); } .token.atrule, .token.attr-value, .token.keyword {color: #07a; } .token.regex, .token.important {color: #e90; } .token.important {font-weight: bold; } .token.entity {cursor: help; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html { font-size: 150%; }
+@media (max-width: 1200px) { html { font-size: 125%; } }
+@media (max-width: 1000px) { html { font-size: 100%; } }
+@media (max-width: 767px) { html { font-size: 80%; } }
+@media (max-width: 568px) { html { font-size: 50%; } }
+@media (max-width: 480px) { html { font-size: 35%; } }
+@media (max-width: 320px) { html { font-size: 25%; } }
+
+body {
+    font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+}
+
+.template {
+    display: none;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    -webkit-transform: translateZ(0);
+}
+
+.number-container, .about-section {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20em;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+}
+
+.about-section {
+    font-size: 1em;
+    text-align: left;
+    width: 30em;
+    height: 22em;
+    max-width: 80%;
+}
+
+.about-section h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.about-section a {
+    color: inherit;
+}
+
+.number-container .odometer-container {
+    font-size: 6em;
+}
+
+.number-description {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: .08em;
+    margin: 1em 0 0;
+    font-weight: bold;
+}
+
+.number-detail {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: .08em;
+    opacity: 0.5;
+}
+
+.title-number-section .number-container .odometer-container {
+    font-size: 4em;
+}
+
+.title-number-section .number-description {
+    font-size: 1.55em;
+    margin: .5em 0 .25em;
+    color: #666;
+}
+
+@media (max-width: 767px) {
+    .title-number-section .number-container .odometer-container {
+        font-size: 5em;
+    }
+
+    .title-number-section .number-description {
+        font-size: 1.8em
+    }
+}
+
+@media (max-width: 568px) {
+    .title-number-section .number-container .odometer-container {
+        font-size: 6em;
+    }
+
+    .title-number-section .number-description {
+        font-size: 2.2em;
+    }
+}
+
+.button {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.7em;
+    padding: .3em .7em .4em;
+    cursor: pointer;
+    margin: 2em auto;
+    border: .15em solid;
+    display: inline-block;
+    line-height: 1.7;
+}
+
+.dark-button {
+    color: white;
+    background-color: #222;
+}
+
+.number-source {
+    text-decoration: none;
+    color: inherit;
+}
+
+.number-source:hover .number-detail {
+    border-bottom: 1px dotted;
+    opacity: 0.8;
+}
+
+.number-section.number-section-theme-minimal {
+    background: #eee;
+    color: #444;
+}
+
+.number-section.number-section-theme-minimal .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+    text-align: right;
+}
+
+.number-section.number-section-theme-digital .odometer {
+    border: .1em solid rgba(139, 245, 165, 0.4);
+}
+
+.number-section.number-section-theme-digital {
+    background: #000;
+    color: #8bf5a5;
+}
+
+.number-section.number-section-theme-car {
+    background: #eee0d3;
+    color: #333;
+}
+
+.number-section.number-section-theme-train-station {
+    background: #ccc;
+    color: #000;
+}
+
+.number-section.number-section-theme-slot-machine {
+    background-image: linear-gradient(left, #000000 0%, #000000 2%, #ffa500 2%, #ffe000 50%, #ffa500 98%, #000000 98%, #000000 100%);
+    background-size: 31em 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000;
+}
+
+.odometer.odometer-theme-odometer {
+    line-height: 2em;
+}
+
+.odometer-theme-odometer:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: .1em;
+    background: #000;
+}
+
+.odometer-theme-odometer:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .1em;
+    background: #000;
+}
+
+.odometer-theme-odometer .odometer-value {
+    width: 100%;
+    text-align: center;
+}
+
+.down-arrow {
+    position: absolute;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    bottom: 1em;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    opacity: 0.5;
+    -webkit-transform: translateZ(0);
+}
+
+.down-arrow:hover {
+    opacity: 1;
+}
+
+.down-arrow:before {
+    content: "\2193";
+    display: block;
+}
+
+/* Social sharing */
+
+#retweet_button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 100px;
+    z-index: 3;
+}
+
+#github_stars {
+    position: fixed;
+    bottom: 30px;
+    left: 130px;
+    width: 100px;
+    z-index: 3;
+}
+
+.social-sharing-wrapper { -webkit-filter: grayscale(1) contrast(1.3); }
+.social-sharing-wrapper:hover { -webkit-filter: none; }
+
+body, html {
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  margin: auto;
+  right: 10px;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  height: 190px;
+  z-index: 5;
+  list-style: none;
+  padding: 0;
+}
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+
+.onepage-pagination li a{
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px;
+}
+
+body.viewing-page-2 .onepage-pagination li a:before { background-color: #444; }
+body.viewing-page-2 .onepage-pagination li a.active:before { border-color: #444; background: none; }
+
+body.viewing-page-3 .onepage-pagination li a:before { background-color: #333; }
+body.viewing-page-3 .onepage-pagination li a.active:before { border-color: #333; background: none; }
+body.viewing-page-3 .social-sharing-wrapper { -webkit-filter: grayscale(1) sepia(1) hue-rotate(-47deg); }
+body.viewing-page-3 .social-sharing-wrapper:hover { -webkit-filter: none; }
+
+body.viewing-page-4 .onepage-pagination li a:before { background-color: #444; }
+body.viewing-page-4 .onepage-pagination li a.active:before { border-color: #444; background: none; }
+body.viewing-page-4 .social-sharing-wrapper { -webkit-filter: grayscale(1) contrast(1.3) invert(1); }
+body.viewing-page-4 .social-sharing-wrapper:hover { -webkit-filter: none; }
+.odometer.odometer-auto-theme, .odometer.odometer-theme-minimal {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-minimal .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-minimal .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
+  transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-down .odometer-ribbon-inner {
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  transition: transform 2s;
+  transform: translateY(0);
+}
+
+@import url("https://fonts.google.com/specimen/Economica");
+.odometer.odometer-auto-theme, .odometer.odometer-theme-train-station {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-train-station .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-train-station .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-train-station .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-train-station .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-train-station .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-train-station.odometer-animating-up .odometer-ribbon-inner {
+  transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-train-station.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-train-station.odometer-animating-down .odometer-ribbon-inner {
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-train-station.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  transition: transform 2s;
+  transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-train-station {
+  font-family: "Economica", sans-serif;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-train-station .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  border-radius: 0.1em;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzExMTExMSIvPjxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjMTExMTExIi8+PHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiMzMzMzMzMiLz48c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzExMTExMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzExMTExMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: linear-gradient(to bottom, #111111 0%, #111111 35%, #333333 55%, #111111 55%, #111111 100%);
+  background-color: #222;
+  padding: 0 0.15em;
+  color: #fff;
+}
+.odometer.odometer-auto-theme .odometer-digit + .odometer-digit, .odometer.odometer-theme-train-station .odometer-digit + .odometer-digit {
+  margin-left: 0.1em;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-inner {
+  left: 0.15em;
+}

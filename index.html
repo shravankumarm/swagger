@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Swagger-Transition</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://underscorejs.org/underscore.js"></script>
+         <link rel="stylesheet" href="dist/build.css" />
+    </head>
+    <body>
+        <div class="main">
+            <div id="landing_page" class="section number-section title-number-section">
+                <div class="number-container">
+                    <div class="odometer-container">
+                        <div class="odometer odometer-theme-minimal odometer-theme-odometer">
+                            <span class="odometer-digit"><span class="odometer-digit-spacer">M</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">K</span>
+                                <span class="odometer-value">L</span>
+                                <span class="odometer-value odometer-last-value">M</span>
+                            </span></span></span></span>
+                            <span class="odometer-digit"><span class="odometer-digit-spacer">S</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">Z</span>
+                                <span class="odometer-value">A</span>
+                                <span class="odometer-value">B</span>
+                                <span class="odometer-value">C</span>
+                                <span class="odometer-value odometer-last-value">S</span>
+                            </span></span></span></span>
+                            <span class="odometer-digit"><span class="odometer-digit-spacer">G</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">I</span>
+                                <span class="odometer-value">J</span>
+                                <span class="odometer-value">K</span>
+                                <span class="odometer-value">L</span>
+                                <span class="odometer-value">M</span>
+                                <span class="odometer-value odometer-last-value">G</span>
+                            </span></span></span></span>
+                           <!--  <span class="odometer-digit"><span class="odometer-digit-spacer">I</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">G</span>
+                                <span class="odometer-value">H</span>
+                                <span class="odometer-value">I</span>
+                                <span class="odometer-value">J</span>
+                                <span class="odometer-value">K</span>
+                                <span class="odometer-value">L</span>
+                                <span class="odometer-value odometer-last-value">I</span>
+                            </span></span></span></span>
+                            <span class="odometer-digit"><span class="odometer-digit-spacer">S</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">Y</span>
+                                <span class="odometer-value">Z</span>
+                                <span class="odometer-value">A</span>
+                                <span class="odometer-value">B</span>
+                                <span class="odometer-value">C</span>
+                                <span class="odometer-value">D</span>
+                                <span class="odometer-value odometer-last-value">S</span>
+                            </span></span></span></span>
+                            <span class="odometer-digit"><span class="odometer-digit-spacer">O</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">L</span>
+                                <span class="odometer-value">M</span>
+                                <span class="odometer-value">N</span>
+                                <span class="odometer-value">O</span>
+                                <span class="odometer-value">P</span>
+                                <span class="odometer-value">Q</span>
+                                <span class="odometer-value">R</span>
+                                <span class="odometer-value">S</span>
+                                <span class="odometer-value odometer-last-value">O</span>
+                            </span></span></span></span>
+                            <span class="odometer-digit"><span class="odometer-digit-spacer">N</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">V</span>
+                                <span class="odometer-value">W</span>
+                                <span class="odometer-value">X</span>
+                                <span class="odometer-value">Y</span>
+                                <span class="odometer-value">Z</span>
+                                <span class="odometer-value">A</span>
+                                <span class="odometer-value">B</span>
+                                <span class="odometer-value">C</span>
+                                <span class="odometer-value">D</span>
+                                <span class="odometer-value odometer-last-value">N</span>
+                            </span></span></span></span> -->
+                            <!-- <span class="odometer-digit"><span class="odometer-digit-spacer">R</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner">
+                                <span class="odometer-value odometer-first-value">&nbsp;</span>
+                                <span class="odometer-value">G</span>
+                                <span class="odometer-value">H</span>
+                                <span class="odometer-value">I</span>
+                                <span class="odometer-value">J</span>
+                                <span class="odometer-value">K</span>
+                                <span class="odometer-value">L</span>
+                                <span class="odometer-value">M</span>
+                                <span class="odometer-value">O</span>
+                                <span class="odometer-value">P</span>
+                                <span class="odometer-value">Q</span>
+                                <span class="odometer-value odometer-last-value">R</span>
+                            </span></span></span></span> -->
+                        </div>
+                    </div>
+                    <div class="number-description">
+                        Madison Square Garden Company
+                    </div>
+                </div>
+                <div class="down-arrow" title="Scroll down to learn more"></div>
+            </div>
+
+            <div class="after-number-sections"></div>
+
+            <div class="section number-section number-section-theme-train-station">
+                <div class="about-section">
+                    <h1>Developers</h1>
+                    <center><p>Explore more about the event engine </p></center>
+                    <center><a target="_blank" class="button" href="http://developer.msg.com">Explore API</a></center>
+                </div>
+            </div>
+
+            <div class="template section number-section">
+                <div class="number-container">
+                    <div class="odometer-container"></div>
+                    <a target="_blank" class="number-source">
+                        <div class="number-description"></div><br/>
+                        <div class="number-detail"></div>
+                    </a>
+                </div>
+                <div class="down-arrow" title="Scroll down to learn more"></div>
+            </div>
+        </div>
+
+        <script>odometerOptions = {auto: false};</script>
+        <script src="dist/build.js"></script>
+        <!-- <script data-main="dist/build" src="public/js/require.js"></script> -->
+
+
+        <div style="-webkit-transform: translateZ(0)"></div>
+    </body>
+</html>
